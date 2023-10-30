@@ -1,0 +1,106 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(52, 59, 69);
+	height: 100%;
+}
+a {
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+i {
+	transition: all 0.3 ease;
+}
+a:hover label {
+	color: rgb(80, 230, 125);
+	text-decoration: underline;
+	cursor: pointer;
+}
+a:hover i {
+	color: rgb(80, 230, 125);
+}
+* {
+	color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin: 30px;
+}
+
+h2 {
+	text-align: center;
+	margin: 10px;
+}
+h2.blue {
+	color: rgb(81, 153, 236);
+}
+
+h2.red {
+	color:rgb(173, 35, 35);
+}
+#message {
+	margin: 20px;
+}
+h3 {
+	text-align: center;
+	margin: 30px;
+}
+button {
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px 20px;
+	background-color: rgb(76, 76, 97);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+button.blue {
+	border: 4px solid rgb(81, 153, 236);
+	background-color: rgb(81, 153, 236);
+}
+button.red {
+	border: 4px solid rgb(173, 35, 35);
+	background-color: rgb(173, 35, 35);
+}
+button:hover {
+	border-color: white;
+}
+button:active {
+	opacity: 0;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+button.disabled {
+	pointer-events: none;
+	cursor: not-allowed;
+}
+button.selected {
+	border-color: rgb(80, 230, 125);
+	animation: blink 0.3s ease;
+}
+button.selected i {
+	color: rgb(80, 230, 125);
+}
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+}
+footer p {
+	text-align: center;
+}
+
+@keyframes blink {
+	0%{opacity: 0;}
+	50%{opacity: .5;}
+	100%{opacity: 1;}
+}
