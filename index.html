@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rock, Paper, Scissors</title>
+	<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/6831/6831872.png" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/51bebafe41.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<h1>Rock Paper Scissors</h1>
+	</header>
+	<main>
+		<section class="selection-field">
+			<h2 class="blue">Player (You)</h2>
+			<div class="container">
+				<button class="rock blue" id="rock">
+					<i class="fa-solid fa-hand-back-fist fa-3x"></i>
+				</button>
+				<button class="paper blue" id="paper">
+					<i class="fa-solid fa-hand fa-3x"></i>
+				</button>
+				<button class="scissors blue" id="scissors">
+					<i class="fa-solid fa-hand-scissors fa-3x"></i>
+				</button>
+			</div>
+			<h3 class="label">Pick a button</h3>
+		</section>
+
+		<section id="results-field">
+			<h2 id="message" class="label">Your result will appear here</h2>
+		</section>
+
+		<section class="selection-field">
+			<h3 class="label">Computer waiting for you...</h3>
+			<div class="container">
+				<button class="rock red disabled">
+					<i class="fa-solid fa-hand-back-fist fa-3x"></i>
+				</button>
+				<button class="paper red disabled">
+					<i class="fa-solid fa-hand fa-3x"></i>
+				</button>
+				<button class="scissors red disabled">
+					<i class="fa-solid fa-hand-scissors fa-3x"></i>
+				</button>
+			</div>
+			<h2 class="red">Opponent (Computer)</h2>
+		</section>
+	</main>
+	<footer>
+		<a href="https://github.com/davynoe" target="_blank">
+			<i class="fa-brands fa-github fa-2x"></i> <label>davynoe</label>
+		</a>
+		<p>Copyright &copy; 2023 - All rights reversed.</p>
+	</footer>
+	<script src="main.js"></script>
+</body>
+</html>
