@@ -5,7 +5,9 @@ const choices = [
 ];
 
 $("button.blue").click(function() {
+	// button ids are named as "rock", "paper" or "scissors"
   const playerChoice = choices.find(choice => choice.name == this.id);
+
 	const randomNum = Math.floor(Math.random() * 3);
   const computerChoice = choices[randomNum];
 
